@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- audio section -->
+  <audio  id="click1">
+    <source src="sounds/click1.wav" type="audio/wav">
+  </audio>
+  <audio  id="click2">
+    <source src="sounds/click2.mp3" type="audio/mp3">
+  </audio>
+  <audio  id="click3">
+    <source src="sounds/click3.mp3" type="audio/mp3">
+  </audio>
+  <audio  id="click4">
+    <source src="sounds/click4.mp3" type="audio/mp3">
+  </audio>
+  <audio  id="click5">
+    <source src="sounds/click5 (mp3cut.net).wav" type="audio/wav">
+  </audio>
+  <meta charset="utf-8">
+  <title> yoUR FEST - 2K23</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="urbg.png" rel="icon">
+  <link href="urbg.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Andika&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Nunito+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+
+</head>
+
+<body>
+  <div id="boxes" style="z-index: 1000;">
+    <div style="top: 50%; left: 50%; " id="dialog" class="window"> 
+    <div id="san">
+    <a href="#" class="close agree" ><img src="close-icon.png" width="25" style="float:right; margin-right: 1vw; margin-top: 1vw;"></a>
+    <img id="box-img-1" src="urce.jpg" width="350"> &nbsp;&nbsp;&nbsp;
+    <img id="box-img-2" src="urce1.jpg" width="350">
+    </div>
+    </div>
+    <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; opacity: 0.4;" id="mask"></div>
+  </div>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+  <script>$(document).ready(function() {	
+
+		var id = '#dialog';
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		// $('#mask').fadeIn(500);	
+		// $('#mask').fadeTo("slow",0.9);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+    // alert(winH)
+    // alert(winW)
+		// Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		// $(id).fadeIn(2000); 	
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+    onClose();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+    onClose();
+	});		
+	
+});</script>
+  <style>#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#c4c4eb;
+    /* background-color: red; */
+    /* display:block; */
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    float: left;
+    width:20vw;
+    height:50vw;
+    /* display:none; */
+    z-index:9999;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width: 70vw; 
+    height:auto;
+    padding: 10px 10px 10px 10px;
+    background-color:transparent;
+    /* top:20% !important; */
+    /* left:20% !important; */
+    /* font-size: 15pt; */
+  }
+
+  @media (max-width: 767px){
+    #boxes .window{
+      padding: 0;
+      margin: 0vh;
+      width:80%;
+      height:auto;
+    }
+    #boxes #dialog{ 
+      padding:0;
+      margin: 0;
+      width: 100%; 
+      height:auto;
+      /* top:10% !important; */
+      /* left:3% !important; */
+    }
+
+
+  }
+  </style>
+
+  <!--==========================
+    Header
+  ============================-->
+  <!-- <div class="con"><img id="mob-logo" src="logo.png" alt="" title="yoUR FEST LOGO"></div> -->
+  <header id="header">
+    <div class="container-fluid" >
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html" class="scrollto"><img src="yoURlogo.png" id="MainLogo" alt="" title="yoUR FEST LOGO"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu" >
+          <li class="menu-active" ><a href="#intro" onclick="navSounds()">Home</a></li>
+          <li><a href="#about" onclick="navSounds()">About</a></li>
+          <li><a href="#speakers" onclick="navSounds()">Management</a></li>
+          <li><a href="#schedule" onclick="navSounds()">Events</a></li>
+          <li><a href="#venue" onclick="navSounds()">Venue</a></li>
+          <li><a href="#contact" onclick="navSounds()">Contact</a></li>
+          <li class="buy-tickets" onclick="navSounds()"><a href="#link" id="mainReg">Register</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <!-- <span id="vid-title">Usha Rama College of Engineering and Technology</span> -->
+      <video id="background-video" muted poster="">
+        <source src="bgvid.mp4" type="video/mp4" >
+        </video>  
+      <div id="mute_button" onclick="turn_on();">
+        <img id="sndimg" src="img/sound_on.jpeg" alt="">
+      </div>
+       <!-- <a href="#about" class="about-btn scrollto">About The Event</a> -->
+    </div>
+  </section>
+  <div class="intro2-container row no-gutter">
+    <div class="radios col-md-4">
+      <input id = "radio1" onclick = "changeRadio(this)" class="radio1" type="radio" name="vinay">&nbsp; College Fest </input><br>
+      <br>
+      <input id="radio2" onclick = "changeRadio(this)" class = "radio1" type="radio" name="vinay">&nbsp; Uniqueness of <span style="color: rgba(6, 0, 182, 0.7); -webkit-text-stroke: 0.050px white;">yo</span><span style="color: red;">UR</span> Fest</input>
+    </div>
+    
+    <video id="bg2" class="col-md-4" muted autoplay loop poster="usha-rama-college-of-engineering-krishna-colleges-c4rq9t22ae.webp">
+      <source src="bgvideofinal.mp4" type="video/mp4">
+    </video>
+
+    <div class="col-md-4" id="radio-matter">
+      College-Fest is all about bringing students together to create an unforgettable experience. We hold our events at the coolest venues and bring in the best brands and bands to give college students the opportunity to explore their cities and their new found freedom. It’s everything you’re looking for in one place.
+    </div>
+  </div>
+  </div>
+  <script>
+    var vid = document.getElementById("background-video");
+    var btt = document.getElementById("mute_button")
+    var sndimg = document.getElementById("sndimg")
+    var snd_flag = true;
+    function turn_on(){
+      if(snd_flag == false){
+        vid.muted = false;
+        sndimg.src = "img/sound_on.jpeg"
+        snd_flag=true
+      }
+      else{
+        vid.muted = true
+        sndimg.src = "img/sound_off.jpeg"
+        snd_flag = false
+      }
+      
+    }
+
+    // vid.muted = false;
+    // alert(vid)
+  </script>
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p>The Event is going to be conducted grandly with lots of contest and events along with food stalls. So, students are invited to register and participate in their interested areas.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>UshaRama College of Engineering and Technology, Telaprolu</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Tuesday and Wednesday<br>24<sup>th </sup> and 25<sup>th</sup> January</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Branches</h2>
+          <p>Here is our event schedule</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link " href="#dep-1" role="tab" data-toggle="tab" style="padding-left:4vw; padding-right:4vw; border-radius: 5vw; border: #195190ff solid 3px; ">CSE/AIDS/AIML/IT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-2" role="tab" data-toggle="tab" style=" border-radius: 5vw; border: #195190ff solid 3px;">ECE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-3" role="tab" data-toggle="tab" style=" border-radius: 5vw; border: #195190ff solid 3px;">EEE</a>
+          </li><br id="br1"><br id="br2">
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-4" role="tab" data-toggle="tab"  style="padding-left:7vw; padding-right:7vw; border-radius: 5vw; border: #195190ff solid 3px;"> MECH</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-5" role="tab" data-toggle="tab" style="padding-left:6.9vw; padding-right:6.9vw; border-radius: 5vw; border: #195190ff solid 3px;">CIVIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-6" role="tab" data-toggle="tab" style="padding-left:5vw; padding-right:5vw; border-radius: 5vw;border: #195190ff solid 3px; ">DIPLOMA</a>
+          </li><br><br>
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-7" role="tab" data-toggle="tab" style="padding-left:2vw; padding-right:2vw; border-radius: 10px; border: #f82249 solid 3px; background-color: #195190ff">ENGINEER KA MAHASANGRAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-8" role="tab" data-toggle="tab" style="padding-left:7vw; padding-right:7vw;  border-radius: 10px; border: #f82249 solid 3px;background-color: #195190ff">CULTURAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dep-9" role="tab" data-toggle="tab" style="padding-left:7vw; padding-right:7vw; border-radius: 10px; border: #f82249 solid 3px; background-color: #195190ff">CLUBS</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Please register for any of the following events that you are interested in</h3>
+
+        <div class="tab-content row justify-content-center">
+
+          <!-- Schdule dep 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-1">
+
+            <!-- <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div> -->
+            
+            <div class="row schedule-item" onclick="expand('cs-1', 'cs-reg-1')">
+              <div class="col-md-4 " >
+                <div class="speaker">
+                  <img src="Banners/technothon.png" alt="Technothon" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <a href="#technothon" title="Click for Details">Technothon</a>
+               <br> Name of the Event Coordinator:&nbsp;Dr K P N V Satyasree <br> Venue:&nbsp; CPLAB2
+              </div>
+              <div class="col-md-12">
+                
+                <p style="height:2.5vw; overflow:hidden;" id="cs-1" ><br> 
+                  Technothon is a Coding event conducted on the 1st dep of the fest. 
+                  This event is focused to enhance the problem-solving skills of the student. 
+                  This event is designed to test the basic knowledge 
+                  in C Programming Language and ranging to the complex problems. <br>
+                 <u> This event consists of two rounds </u> : - <br>
+                <u>•	Round 1</u>: This round consists 30 multiple choice questions on Basic C Programming.
+                  Language and the time limit for this round is 30 minutes. <br>
+                <u>•	Round 2</u>: The students who are qualified for 2nd round, will be given 3 small algorithms. 
+                    The fastest coding first with less compile time and execution time win the show. <br>
+                    <u> RULES:</u> <br>
+                    •	Only individual participants are allowed for this event. <br>
+                    •	The participant must register before entering. The registration fee for this event is 100/- <br>
+                    •	A computer will be provided to each participant. <br>
+                    •	The exchange of any written code or any participant found talking to other participants will not be encouraged. <br>
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+
+
+
+                  <a class="RegText" href="#register" id="cs-reg-1">Register</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="row schedule-item" onclick="expand('cs-2', 'cs-reg-2')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/jam.png" alt="Technical Jam" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Technical-Jam" title="Click for Details">Technical Jam</a> <br>Name of the Event Coordinator:&nbsp;Ms S Gogula Priya <br> Venue:&nbsp; R-BLOCK 309</div>
+              <div class="col-md-12"><p style="height:2vw; overflow:hidden;" id="cs-2">
+                <br>
+                RULES:
+                <br> There will be two rounds First round consists of general topics and Second round consists of technical topics
+                <br> 	Participants have to speak on given topic only for one minute in every round.
+                <br> 	No extra time will be provided
+                <br> 	Qulified students in the first round are moved to second round
+                <br> 	Language will only be in ENGLISH
+                <br> 	No groups are allowed ,topics are placed in bowl
+                <br> 	Final prizes are decided in the second round
+                <br> 	Result decided by the Judges cannot be claimed.
+                  <br><a href="#banner" onclick="banner('Banners/jam.png')">Show Banner</a>
+
+
+                <a class="RegText" href="#register" id='cs-reg-2'>Register</a></p></div>
+    
+              </div>
+            
+
+            <div class="row schedule-item" onclick="expand('cs-3', 'cs-reg-3')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/crypturmind.png" alt="crypturmind">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#CryptURMind">Crypt UR Mind</a> <br>Name of the Event Coordinator:&nbsp;Mr B V Praveen Kumar  <br> Venue:&nbsp; CPLAB-2</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-3">
+                  <br>
+                  <u> Rules </u>:
+                 <br> •	Only registered candidates are eligible to participate.
+                 <br> •	All the questions must be answered with in the time limit.
+                     <br>          Round 1:
+                         <br>                     Number of questions will be 30 in this, out of which a minimum of
+                                              20 questions must be answered correctly so as to get qualified for 
+                                             “Round-2”. Time limit:15min.
+                              <br>  Round 2: <br>
+                                             Number of questions will be 60 and the time limit is 20min. Top                      
+                                             Scorer will be the winner.
+                                             <br>
+                                             <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                       
+
+                  
+                  <a class="RegText" href="#register" id= 'cs-reg-3'>Register</a></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-4', 'cs-reg-4')">
+           
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/googlemaster.png" alt="GoogleMaster">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#GoogleMaster">Google Master</a> <br>Name of the Event Coordinator:&nbsp;Ms K Bhavani <br> Venue:&nbsp; CPLAB - 1</div>
+                <div class="col-md-12">
+                  <p style="height:2vw; overflow:hidden;" id="cs-4">
+                    <br> <u> Rules </u>:
+                        <br> •	Candidates should be registered with his/her own e-mail addresses.(The candidate must remember the mail id and its password).
+                       <br> •	The event will be started at a time for all the candidates.
+                      <br>  •	The late comers will be ignored.
+                       <br> •	The time limit for this event will be 30mins.
+                      <br>  •	Consists of 5 questions and all should be answered correctly. <br>
+                        •	If the 1st question answer is correct, then only the next question will be displaced and vice-versa.
+                      <br><br>
+                      <a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                      <a class="RegText" href="#register" id= 'cs-reg-4'>Register</a></p>
+                </div>
+              
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-5', 'cs-reg-5')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/crosswordpuzzle.png" alt="Technical Crossword Puzzle">
+                </div>
+                </div>
+              <div class="col-md-8"><a href="#Technical Crossword Puzzle">Technical Crossword Puzzle</a> <br> Name of the Event Coordinator:&nbsp;Mrs T Naga Mounika <br> Venue:&nbsp; R -BLOCK 102</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-5">
+                  <br>
+                <u>  ROUND-1</u>: <br>
+                      - A puzzle with 15-20 questions is provided. You are asked to answer them in 20 minutes of times 1 mark for correct response. <br>
+                      - Top 25 are selected for ROUND-2. <br>
+                     <u> ROUND-2</u>: <br>
+                      - A few questions are provided for word challenges asked to answer them in 15 minutes of time. <br>
+                      - 5 marks for each approx. Correct response. <br>
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-5'>Register</a></p>
+                </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-6', 'cs-reg-6')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/coderoyal.png" alt="coderoyal">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#CodeRoyal">Code Royal</a> <br>
+                Name of the Event Coordinator:&nbsp;Ms V Sandhya <br> Venue:&nbsp; CPLAB-4</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-6">
+                  <br>
+                 <u> Rules </u> : <br>
+                  •	There are many languages to choose from to implement your solution during the contest, so go for your favorite or try a more exotic one! <br>
+                  •	Candidates should be registered with his/her own e-mail addresses.(The candidate must remember the mail id and its password). <br>
+                  •	The event will be started at a time for all the candidates. <br>
+                  •	The late comers will be ignored. <br>
+                  •	The time limit for this event will be 60mins. <br>
+                  •	Consists of 2 questions and everyone should write the code in any programming language of the participant interest. <br>
+                  •	If you code the program in different languages will be awarded more marks. <br>
+                      <br>
+                      <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-6'>Register</a></p>
+                  </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-7', 'cs-reg-7')">
+            
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/kyc.png" alt="Know Your PC">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#Know Your PC">Know Your PC</a>
+                   <br>Name of the Event Coordinator:&nbsp;Mr M Chanti Babu <br> Venue:&nbsp; R-BLOCK 103</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-7">
+                  <br>
+              <u> RULES AND REGULATIONS </u>: <br>
+                      •	Event will be having 2 rounds. <br>
+                      •	10 questions will be allotted in first round. <br>
+                      •	Second round will be conducted only for qualifiers in first round. <br>
+                      •	5 questions will be allotted in second round. <br>
+                      
+                      <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-7'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-8', 'cs-reg-8')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/tech synonym.png" alt="TechSynonym">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#TechSynonym">Tech Synonym</a> <br>
+                  Name of the Event Coordinator:&nbsp;Mr Madhu Babu <br> Venue:&nbsp; R-BLOCK 201 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-8">
+                  <br>
+               <u>  <b> Rules</u>:</b> <br>
+
+                  •	There are many languages to choose from to implement your solution during the contest, so go for your favourite or try a more exotic one! <br>
+                  •	Candidates should be registered with his/her own e-mail addresses.(The candidate must remember the mail id and its password). <br>
+                  •	The event will be started at a time for all the candidates. <br>
+                  •	The late comers will be ignored. <br>
+                  •	The time limit for this event will be 20mins for all questions. <br>
+                  •	Consists 30 of questions. <br>
+                  •	Spot registrations will be closed at 11:00AM for this event only. <br>
+                  
+
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-8'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-10', 'cs-reg-10')">
+              
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/breakthequery.png" alt="Break The Query">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#BreakTheQuery">Break The Query</a> <br> 
+                  Name of the Event Coordinator:&nbsp;Ms B Sowmya <br> Venue:&nbsp; CPLAB - 4</div>
+                  <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-10">
+                 
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-10'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-11', 'cs-reg-11')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/lineup.png" alt="Line Up">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#lineup">Line Up</a> Name of the Event Coordinator:&nbsp;Mr K Rajasekhar <br> Venue:&nbsp; R - BLOCK 202</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-11">
+                 
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-11'>Register</a></p>
+            </div>
+            </div>
+
+            
+
+            <div class="row schedule-item" onclick="expand('cs-12', 'cs-reg-12')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/minute.png" alt="Minute to win it">
+                </div>
+                </div>
+              <div class="col-md-8"> <a href="#Minutetowinit">Minute to win it</a> Name of the Event Coordinator:&nbsp;Ms K Sirisha <br> Venue:&nbsp; R - BLOCK 203</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-12">
+                  <br>
+                <u> <b> Rules:</b> </u> <br>
+                  •	There are many languages to choose from to implement your solution during the contest, 
+                  so go for your favourite or try a more exotic one! <br>
+                  •	Candidates should be registered with his/her own e-mail addresses.
+                  (The candidate must remember the mail id and its password). <br>
+                  •	The event will be started at a time for all the candidates. <br>
+                  •	The late comers will be ignored. <br>
+                  •	The time limit for this event will be 15mins for all questions. <br>
+                  •	Consists 15 of  questions. <br>
+                  •	Spot registrations will be closed at 11:00AM for this event only. <br>
+                  
+
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-12'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cs-13', 'cs-reg-13')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/PaperPresentationCSE.jpeg" alt="Line Up">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#lineup">Paper presentation</a> Name of the Event Coordinator:&nbsp;Trivikram <br> Venue:&nbsp; R - BLOCK 202</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-13">
+                  <br>
+                 
+              
+                 
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-13'>Register</a></p>
+            </div>
+            </div>
+
+            <!-- <div class="row schedule-item" onclick="expand('cs-14', 'cs-reg-14')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/###.png" alt="Line Up">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#lineup">Project expo</a> Name of the Event Coordinator:&nbsp;### <br> Venue:&nbsp; R - BLOCK 202</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-14">
+                  <br>
+                 
+              
+                 
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-14'>Register</a></p>
+            </div>
+            </div> -->
+
+            <div class="row schedule-item" onclick="expand('cs-15', 'cs-reg-15')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/PosterPresentationCSE.jpeg" alt="Line Up">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#lineup">Poster Presentation</a> Name of the Event Coordinator:&nbsp;G baleshwari <br> Venue:&nbsp; R - BLOCK 202</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cs-15">
+                  <br>
+              
+                 
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'cs-reg-15'>Register</a></p>
+            </div>
+            </div>
+
+          </div>
+          <!-- End Schdule dep 1 -->
+
+          <!-- Schdule dep 2 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-2">
+
+            <!-- <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div> -->
+            
+            <div class="row schedule-item" onclick="expand('ece-1', 'ece-reg-1')">
+              <div class="col-md-4 " >
+                <div class="speaker">
+                  <img src="Banners/techpost.png" alt="TechPost" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <a href="#TechPost" title="Click for Details">TechPost</a>
+               <br> Name of the Event Coordinator:&nbsp;Mr D Srikanth <br> Venue:&nbsp; R BLOCK - 405
+              </div>
+              <div class="col-md-12">
+                
+                <p style="height:2.5vw; overflow:hidden;" id="ece-1" ><br> 
+                 
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>           
+                  <a class="RegText" href="#register" id="ece-reg-1">Register</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="row schedule-item" onclick="expand('ece-2', 'ece-reg-2')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/immovativehub.png" alt="InnovativeHub" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#InnovativeHub" title="Click for Details">Innovative Hub</a> <br>
+                Name of the Event Coordinator:&nbsp;Mr P Suresh 
+                <br> Venue:&nbsp; R BLOCK - 312</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-2">
+                  1.	The Session starts on 24/1/2023 at 10:30 AM and ends at 03:00 PM. <br>
+                  2.	Set up your project (or) circuit at least one hour before session start time on the dep. You are scheduled to present. <br>
+                  3.	Students eligible for one or two persons per project. <br>
+                  4.	If any requirement like Components, tool kit for trouble shooting it is you’re responsible. <br>
+                  5.	If any student to participant’s other event please inform to Co-ordinators before 11:00AM.
+                  6.	Every participant comes with explanation chart. <br>
+                  7.	Participant’s should bring along with registration slip for entry.
+
+                
+               <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a></p>
+               <a class="RegText" href="#register" id='ece-reg-2'>Register</a></p></div>
+    
+              </div>
+            
+
+            <!-- <div class="row schedule-item" onclick="expand('ece-3', 'ece-reg-3')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/Technical QuizEEE.png" alt="Technical	Quiz">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Technical	Quiz">Technical	Quiz</a> <br>Name of the Event Coordinator:&nbsp;Mr M V Srikanth  <br> Venue:&nbsp; R BLOCK - 305</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-3">
+                  <br>
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'ece-reg-3'>Register</a></p>
+              </div>
+            </div> -->
+
+            <div class="row schedule-item" onclick="expand('ece-4', 'ece-reg-4')">
+           
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/circuit.png" alt="CircuitWizard">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#CircuitWizard">Circuit Wizard</a> <br>
+                Name of the Event Coordinator:&nbsp;Mrs G Suneetha <br> Venue:&nbsp; R BLOCK - 409</div>
+                <div class="col-md-12">
+                  <p style="height:2vw; overflow:hidden;" id="ece-4">
+                    <br> 1.	All the student participants should bring the registration Receipt compulsory.
+                    2.	It consists of total 3 rounds. <br>
+                    3.	The participants can participate either as a pair or single. <br>
+                    4.	The participants should get ID card compulsory. <br>
+                    5.	Participants should be at the event room on time (10:00 AM). <br>
+                    If any student is participating in any other event should be inform to the event co-ordinator before 11:00AM.
+                    
+                    <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+
+                     <a class="RegText" href="#register" id= 'ece-reg-4'>Register</a></p>
+                </div>
+              
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-5', 'ece-reg-5')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/synth.png" alt="SynthpopParady">
+                </div>
+                </div>
+              <div class="col-md-8"><a href="#SynthpopParady">Synth Pop Parady</a> <br>
+                 Name of the Event Coordinator:&nbsp;Mr K Sandeep <br> Venue:&nbsp; R BLOCK - 410</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-5">
+                  <br>
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'ece-reg-5'>Register</a></p>
+                </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-6', 'ece-reg-6')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/BuzzPlosion.png" alt="Buzzplosion">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Buzzplosion">Buzz Plosion</a> <br>
+                Name of the Event Coordinator:&nbsp;Mr A SyamKumar <br> Venue:&nbsp; R BLOCK - 403</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-6">
+                  <br>
+                 <u> Round </u> I: <br>
+                        1.	Random components will be displayed on the screen for 3 seconds. <br>
+                        2.	Minimum 5 components should be written on paper within 2 minutes. <br>
+                        3.	Students who can write 5 components can be permitted to 2nd round rest of them will be disqualified. <br>
+                      <u>  Round-II: </u> <br>
+                        1.	Pictures will be displayed along with numbers for 10 seconds. <br>
+                        2.	A particular student will be asked a number they must say picture name to which number belongs. <br>
+                        3.	They will be permitted to 3rd round by making pairs. <br>
+                      <u>  Round-III:</u> <br>
+                        1.	Picture in picture will be displayed. <br>
+                        2.	They should guess the name. <br>
+
+                 
+                 <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'ece-reg-6'>Register</a></p>
+                  </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-7', 'ece-reg-7')">
+            
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/mysterybusters.png" alt="MysteryBusters">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#MysteryBusters">Mystery Busters</a> 
+                  <br>Name of the Event Coordinator:&nbsp; Mr K Bhaskar <br> Venue:&nbsp; R BLOCK - 301</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-7">
+                  <br>
+                  <u>RULES AND REGULATIONS</u> <br>
+                  1.	Team members should be minimum-2 and maximum-4. <br>
+                  2.	Event will be conducted only in college premises. <br>
+                  3.	Students should be on time. <br>
+                  4.	Students should not be allowed in restricted areas(ex-temple and library). <br>
+                  5.	Unnecessary activities leads to team disqualification. <br>
+
+                  
+                <a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'ece-reg-7'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-8', 'ece-reg-8')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/creativeera.png" alt="CreativeEra">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#CreativeEra">Creative Era</a> <br>
+                  Name of the Event Coordinator:&nbsp;Dr A Suneel Kumar <br> Venue:&nbsp; R BLOCK - 401, 404 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-8">
+                  <br>
+                                    
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  
+                  <a class="RegText" href="#register" id= 'ece-reg-8'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-9', 'ece-reg-9')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/PaperPresentationECE.jpeg" alt="#Paper-Presentation">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#paper-presentation">Paper Presentation</a> <br>
+                 Venue:&nbsp; R BLOCK - 403, 404 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-9">
+                  <br>
+                  <u>RULES AND REGULATIONS</u>
+                  1. Maximum number of participants in a Team is 2. <br>
+                  2. The topics that the papers can be chosen by your own. It is advisable that the presentation focuses on one particular topic. <br>
+                  3. Abstract should not exceed more than 250 words and Paper should not exceed 15 pages. <br>
+                  4. Bring your college ID-Card & receipt on event dep. <br>
+                  5. Kindly bring your PowerPoint presentation on a pen-drive or mail ID. <br>
+                  6. Soft-copies of the submitted paper and PowerPoint presentations must be in the .docx format. <br>
+                  7. The teams will get 10 minutes for presentation and followed by question and answer session. <br>
+                  8. Persons from different institutions can be a part of the same team.  <br>
+                  9. Paper must contain index, list of figures, list of tables, abstract, introduction, point wise description of subject and conclusion, Result and references. <br>
+
+                                    
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  
+                  <a class="RegText" href="#register" id= 'ece-reg-9'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-10', 'ece-reg-10')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/TechnicalQuizECE.jpeg" alt="TechnicalQuiz">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#TechnicalQuiz">Technical Quiz</a> <br>
+                Venue:&nbsp; R BLOCK - 401 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-10">
+                  <br>
+                  <u>RULES AND REGULATIONS</u> <br>
+                  -	Individual participants can register for the event. <br>
+                  -	The participants will not be allowed to use mobile or other electronic gadgets during the quiz. <br>
+                  -	The questions shall be in the form of multiple-choice, true/false statement, specific one word answer type. <br>
+                  -	The decision of the quiz-master will be final and will not be subjected to any change. <br>
+                  -	Spot registration is available. 
+                                    
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  
+                  <a class="RegText" href="#register" id= 'ece-reg-10'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-11', 'ece-reg-11')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/PosterPresentationECE.jpeg" alt="PosterPresentation">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#PosterPresentationECE">Poster Presentation</a> <br>
+                Venue:&nbsp; R BLOCK - 405 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-11">
+                  <br>
+                -  Poster size preferably of drawing sheet . <br>
+                -  Font, diagrams should be legible. <br>
+                -  Must include the abstract title, author and co-author names, and the institution. <br>
+                -  Use charts and graphs to illustrate data. <br>
+                -  Use high resolution photographs if necessary. <br>
+                -  Do not use all capital letters. <br>
+                -  Keep consistent margins. <br>
+                -  Keep line spacing consistent. <br>
+                -  Keep the colour, style, and thickness of borders the same. <br>
+                -  Keep shading consistent. <br>
+
+                                    
+                  <a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  
+                  <a class="RegText" href="#register" id= 'ece-reg-11'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('ece-12', 'ece-reg-12')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/ProjectExhibbitionECE.jpeg" alt="ProjectExhibbition">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#ProjectExhibbition">Project Exhibition</a> <br>
+               Venue:&nbsp; R BLOCK - 312 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="ece-12">
+                  <br>
+                                    
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  
+                  <a class="RegText" href="#register" id= 'ece-reg-12'>Register</a></p>
+            </div>
+            </div>
+          </div>
+          <!-- End Schdule dep 2 -->
+
+        <!-- Schdule dep 3 -->
+        <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-3">
+
+          <!-- <div class="row schedule-item">
+            <div class="col-md-2"><time>09:30 AM</time></div>
+            <div class="col-md-10">
+              <h4>Registration</h4>
+              <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+            </div>
+          </div> -->
+          
+          <div class="row schedule-item" onclick="expand('eee-1', 'eee-reg-1')">
+            <div class="col-md-4 " >
+              <div class="speaker">
+                <img src="Banners/electricfunda.png" alt="Electrical Funda" title="Click for Details">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <a href="#Electrical-Funda" title="Click for Details">Electrical Funda</a>
+             <br> Name of the Event Coordinator:&nbsp;Mr K Kranthi <br> Venue:&nbsp; R BLOCK - 104
+            </div>
+            <div class="col-md-12">
+              
+              <p style="height:2.5vw; overflow:hidden;" id="eee-1" >
+                <u>RULES AND REGULATIONS</u> <br>
+               <u> Round 1:</u> student has to explain clearly one fundamental concept related to Electrical department. <br>
+               <u> Round 2:</u> student has to take one slip from box and explain fundamental.
+                    
+                <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>            
+               <a class="RegText" href="#register" id="eee-reg-1">Register</a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="row schedule-item" onclick="expand('eee-2', 'eee-reg-2')">
+            <div class="col-md-4" >
+              <div class="speaker">
+                <img src="Banners/paperpresentationEEE.png" alt="Paper Presentation" title="Click for Details">
+              </div>
+            </div>
+            <div class="col-md-8"><a href="#Paper-Presentation" title="Click for Details">Paper Presentation</a> 
+            <br> Venue:&nbsp; R-BLOCK 103</div>
+            <div class="col-md-12"><p style="height:2vw; overflow:hidden;" id="eee-2">
+              #$#$#$#     
+              <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>         
+             <a class="RegText" href="#register" id='eee-reg-2'>Register</a></p></div>
+  
+            </div>
+          
+
+          <div class="row schedule-item" onclick="expand('eee-3', 'eee-reg-3')">
+            <div class="col-md-4" >
+              <div class="speaker">
+                <img src="Banners/Technical QuizEEE.png" alt="Technical Quiz">
+              </div>
+            </div>
+            <div class="col-md-8"><a href="#Technical Quiz">Technical Quiz</a> 
+               <br> Venue:&nbsp; R BLOCK - 309</div>
+            <div class="col-md-12">
+              <p style="height:2vw; overflow:hidden;" id="eee-3">                                   
+
+                <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'eee-reg-3'>Register</a></p>
+            </div>
+          </div>
+
+          <div class="row schedule-item" onclick="expand('eee-4', 'eee-reg-4')">
+         
+            <div class="col-md-4" >
+              <div class="speaker">
+                <img src="Banners/posterpresentationEEE.png" alt="Poster Presentation">
+              </div>
+            </div>
+            <div class="col-md-8"><a href="#Poster-Presentation">Poster Presentation</a> 
+              <br> Venue:&nbsp; R BLOCK - 204</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="eee-4">
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                   <a class="RegText" href="#register" id= 'eee-reg-4'>Register</a></p>
+              </div>
+            
+          </div>
+
+          <div class="row schedule-item" onclick="expand('eee-5', 'eee-reg-5')">
+         
+            <div class="col-md-4" >
+              <div class="speaker">
+                <img src="Banners/posterpresentationEEE.png" alt="Poster Presentation">
+              </div>
+            </div>
+            <div class="col-md-8"><a href="#Poster-Presentation">Project Exhibition</a> 
+              <br> Venue:&nbsp; R BLOCK - 312</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="eee-5">
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                   <a class="RegText" href="#register" id= 'eee-reg-5'>Register</a></p>
+              </div>
+            
+          </div>
+          </div>
+        <!-- End Schdule dep 3 -->
+          <!-- Schdule dep 4 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-4">
+
+            <!-- <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div> -->
+            
+            <div class="row schedule-item" onclick="expand('mech-1', 'mech-reg-1')">
+              <div class="col-md-4 " >
+                <div class="speaker">
+                  <img src="Banners/AUTOCAD.jpeg" alt="Auto CAD" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <a href="#Auto-CAD" title="Click for Details">Auto CAD</a>
+               <br> Name of the Event Coordinator:&nbsp;Mr B Kiran Babu 
+               <br> Venue:&nbsp; U BLOCK - 210
+
+              </div>
+              <div class="col-md-12">
+                <br>
+                
+                <p style="height:2.5vw; overflow:hidden;" id="mech-1" ><br>    
+                  <a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id="mech-reg-1">Register</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="row schedule-item" onclick="expand('mech-2', 'mech-reg-2')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/JETROCKETS.jpeg" alt="Jet Rockets" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Jet Rockets" title="Click for Details">Jet Rockets</a> 
+                <br> Venue:&nbsp; Near Basket Ball Court</div>
+              <div class="col-md-12"><p style="height:2vw; overflow:hidden;" id="mech-2">                 
+                <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id='mech-reg-2'>Register</a></p></div>
+    
+              </div>
+            
+
+            <div class="row schedule-item" onclick="expand('mech-3', 'mech-reg-3')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/paperpresentationMECH.png" alt="Paper Presentation">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Paper Presentation">Paper Presentation</a>
+              <br> Venue:&nbsp; U BLOCK - 204</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="mech-3">
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id= 'mech-reg-3'>Register</a></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('mech-4', 'mech-reg-4')">
+           
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/Technical QuizMECH.png" alt="Technical Quiz">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Technical Quiz">Technical Quiz</a>
+                 <br> Venue:&nbsp; U BLOCK - 215</div>
+                <div class="col-md-12">
+                  <p style="height:2vw; overflow:hidden;" id="mech-4">
+                    <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                     <a class="RegText" href="#register" id= 'mech-reg-4'>Register</a></p>
+                </div>
+              
+            </div>
+
+            <div class="row schedule-item" onclick="expand('mech-5', 'mech-reg-5')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/posterpresentationMECH.png" alt="Poster Presentation ">
+                </div>
+                </div>
+              <div class="col-md-8"><a href="#Poster Presentation">Poster Presentation</a>
+                 <br> Venue:&nbsp; R - 102</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="mech-5">
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'mech-reg-5'>Register</a></p>
+                </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('mech-6', 'mech-reg-6')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/projectExpoMECH.png" alt="Project Exhibition ">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Project Exhibition ">Project Exhibition </a> 
+                 <br> Venue:&nbsp; U BLOCK - 205</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="mech-6">    
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                 
+                  <a class="RegText" href="#register" id= 'mech-reg-6'>Register</a></p>
+                  </div>
+            </div>
+
+          </div>
+          <!-- End Schdule dep 4 -->
+                    <!-- Schdule dep 5 -->
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-5">
+
+                      <!-- <div class="row schedule-item">
+                        <div class="col-md-2"><time>09:30 AM</time></div>
+                        <div class="col-md-10">
+                          <h4>Registration</h4>
+                          <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+                        </div>
+                      </div> -->
+                      
+                      <div class="row schedule-item" onclick="expand('civil-1', 'civil-reg-1')">
+                        <div class="col-md-4 " >
+                          <div class="speaker">
+                            <img src="Banners/paperpresentationCIVIL.png" alt="Paper Presentation" title="Click for Details">
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a href="#Paper Presentation" title="Click for Details">Paper Presentation</a>
+                        <br> Venue:&nbsp; U BLOCK - 306
+                        </div>
+                        <div class="col-md-12">
+                          
+                          <p style="height:2.5vw; overflow:hidden;" id="civil-1" ><br>      
+                            <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                      
+                            <a class="RegText" href="#register" id="civil-reg-1">Register</a>
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div class="row schedule-item" onclick="expand('civil-2', 'civil-reg-2')">
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/Technical QuizCIVIL.png" alt="Technical Quiz" title="Click for Details">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Technical-Quiz" title="Click for Details">Technical Quiz</a> 
+                          <br> Venue:&nbsp; U BLOCK - 305</div>
+                        <div class="col-md-12"><p style="height:2vw; overflow:hidden;" id="civil-2">
+                          <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id='civil-reg-2'>Register</a></p></div>
+              
+                        </div>
+
+                      <div class="row schedule-item" onclick="expand('civil-3', 'civil-reg-3')">
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/posterpresentationCIVIL.png" alt="Poster Presentation">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Poster Presentation">Poster Presentation</a> 
+                          <br> Venue:&nbsp; U BLOCK - 115</div>
+                        <div class="col-md-12">
+                          <p style="height:2vw; overflow:hidden;" id="civil-3">
+                            <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                         <a class="RegText" href="#register" id= 'civil-reg-3'>Register</a></p>
+                        </div>
+                      </div>
+          
+                      <div class="row schedule-item" onclick="expand('civil-4', 'civil-reg-4')">
+                     
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/projectExpoCIVIL.png" alt="Project Exhibition ">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Project Exhibition ">Project Exhibition </a>
+                           <br> Venue:&nbsp; U BLOCK - 113</div>
+                          <div class="col-md-12">
+                            <p style="height:2vw; overflow:hidden;" id="civil-4">
+                              <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                              <a class="RegText" href="#register" id= 'civil-reg-4'>Register</a></p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <!-- End Schdule dep 5 -->
+
+
+
+                    <!-- Schdule dep 6 -->
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-6">
+
+                      <!-- <div class="row schedule-item">
+                        <div class="col-md-2"><time>09:30 AM</time></div>
+                        <div class="col-md-10">
+                          <h4>Registration</h4>
+                          <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+                        </div>
+                      </div> -->
+                      
+                      <div class="row schedule-item" onclick="expand('dip-1', 'dip-reg-1')">
+                        <div class="col-md-4 " >
+                          <div class="speaker">
+                            <img src="Banners/diplomapaperp.png" alt="Paper Presentation" title="Click for Details">
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a href="#Paper Presentation" title="Click for Details">Paper Presentation</a>
+                        <br> 
+                        </div>
+                        <div class="col-md-12">
+                          
+                          <p style="height:2.5vw; overflow:hidden;" id="dip-1" ><br>      
+                            <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                      
+                            <a class="RegText" href="#register" id="dip-reg-1">Register</a>
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div class="row schedule-item" onclick="expand('dip-2', 'dip-reg-2')">
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/diplomatq.png" alt="Technical Quiz" title="Click for Details">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Technical-Quiz" title="Click for Details">Technical Quiz</a> 
+                          <br></div>
+                        <div class="col-md-12"><p style="height:2vw; overflow:hidden;" id="dip-2">
+                          <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id='dip-reg-2'>Register</a></p></div>
+              
+                        </div>
+
+                      <div class="row schedule-item" onclick="expand('dip-3', 'dip-reg-3')">
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/diplomapp.png" alt="Poster Presentation">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Poster Presentation">Poster Presentation</a> 
+                          <br></div>
+                        <div class="col-md-12">
+                          <p style="height:2vw; overflow:hidden;" id="dip-3">
+                            <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                         <a class="RegText" href="#register" id= 'dip-reg-3'>Register</a></p>
+                        </div>
+                      </div>
+          
+                      <div class="row schedule-item" onclick="expand('dip-4', 'dip-reg-4')">
+                     
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/diplomame.png" alt="Project Exhibition ">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Project Exhibition ">Model Exhibition  </a>
+                           <br></div>
+                          <div class="col-md-12">
+                            <p style="height:2vw; overflow:hidden;" id="dip-4">
+                              <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                              <a class="RegText" href="#register" id= 'dip-reg-4'>Register</a></p>
+                          </div>
+                        
+                      </div>
+                      <div class="row schedule-item" onclick="expand('dip-5', 'dip-reg-5')">
+                     
+                        <div class="col-md-4" >
+                          <div class="speaker">
+                            <img src="Banners/diplomabb.png" alt="Project Exhibition ">
+                          </div>
+                        </div>
+                        <div class="col-md-8"><a href="#Project Exhibition ">Black Box </a>
+                           <br></div>
+                          <div class="col-md-12">
+                            <p style="height:2vw; overflow:hidden;" id="dip-5">
+                              <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                              <a class="RegText" href="#register" id= 'dip-reg-5'>Register</a></p>
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <!-- End Schdule dep 8 -->
+
+         
+
+                    <!-- Schdule dep 7 -->
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-7">
+
+                      <!-- <div class="row schedule-item">
+                        <div class="col-md-2"><time>09:30 AM</time></div>
+                        <div class="col-md-10">
+                          <h4>Registration</h4>
+                          <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+                        </div>
+                      </div> -->
+                      
+                      <div class="row schedule-item" onclick="expand('ems-1', 'ems-reg-1')">
+                        <div class="col-md-4 " >
+                          <div class="speaker">
+                            <img src="Banners/engineeringmaha.png" alt="engineer_ka_maha_sangram_2023" title="Click for Details">
+                          </div>
+                        </div>
+                        <div class="col-md-8">
+                          <a href="#engineering" title="Click for Details">Engineering ka Mahasangram</a>
+                        <br> Name of the Event Coordinator:&nbsp;Dr A M M Rao, Vice Principal <br> Venue:&nbsp; CPLAB-1 R209 <br>
+                        for more details, <a href="https://issuu.com/yashu13/docs/engineer_ka_maha_sangram_2023">Tap Me</a> 
+                        </div>
+                        <div class="col-md-12">
+                          
+                          <p style="height:2.5vw; overflow:hidden;" id="ems-1" ><br>      
+                            <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                      
+                            <a class="RegText" href="#register" id="ems-reg-1">Register</a>
+                          </p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <!-- End Schdule dep 7 -->
+    
+                        
+                    <!-- Schdule dep 8 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-8">
+
+            <!-- <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div> -->
+            
+            <div class="row schedule-item" onclick="expand('cul-1', 'cul-reg-1')">
+              <div class="col-md-4 " >
+                <div class="speaker">
+                  <img src="Banners/dance.png" alt="Dance" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <a href="#Dance" title="Click for Details">Dance</a>
+               <br> Name of the Event Coordinator:&nbsp;Mr K Koteshwara Kishore <br> Venue:&nbsp; U BLOCK - 413
+              </div>
+              <div class="col-md-12">
+                
+                <p style="height:2.5vw; overflow:hidden;" id="cul-1" ><br> 
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <a class="RegText" href="#register" id="cul-reg-1">Register</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="row schedule-item" onclick="expand('cul-2', 'cul-reg-2')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/teluguammai.png" alt="Telugu Ammai" title="Click for Details">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Telugu Ammai" title="Click for Details">Telugu Ammai</a> 
+                <br>Name of the Event Coordinator:&nbsp;Ms K Nitya <br> Venue:&nbsp; R-BLOCK - SEMINAR HALL</div>
+              <div class="col-md-12"><p style="height:2vw; overflow:hidden;" id="cul-2">
+                <br>
+                <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+               <a class="RegText" href="#register" id='cul-reg-2'>Register</a></p></div>
+    
+              </div>
+            
+
+            <div class="row schedule-item" onclick="expand('cul-3', 'cul-reg-3')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/talkathon.png" alt="Talkathon">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Talkathon">Talkathon</a>
+                 <br>Name of the Event Coordinator:&nbsp;Mr R Simhachalam <br> Venue:&nbsp; R BLOCK - 102</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-3">
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                 <a class="RegText" href="#register" id= 'cul-reg-3'>Register</a></p>
+              </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-4', 'cul-reg-4')">
+           
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/dubsmash.png" alt="Dubsmash">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Dubsmash">Dubsmash</a>
+                <br>Name of the Event Coordinator:&nbsp;Mr T Sashegiri Rao <br> Venue:&nbsp; U BLOCK - 213</div>
+                <div class="col-md-12">
+                  <p style="height:2vw; overflow:hidden;" id="cul-4">
+                    <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                    <a class="RegText" href="#register" id= 'cul-reg-4'>Register</a></p>
+                </div>
+              
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-5', 'cul-reg-5')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/spotphoto.png" alt="Spot Photography">
+                </div>
+                </div>
+              <div class="col-md-8"><a href="#Spot Photography">Spot Photography</a> 
+                <br> Name of the Event Coordinator:&nbsp;Mr E Rama Krishna Reddy <br> Venue:&nbsp; R BLOCK - 304</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-5">
+                <br>  
+                <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'cul-reg-5'>Register</a></p>
+                </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-6', 'cul-reg-6')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/shortfilm.png" alt="Short Film">
+                </div>
+              </div>
+              <div class="col-md-8"><a href="#Short Film">Short Film</a> 
+                <br>Name of the Event Coordinator:&nbsp;Dr P V Dharmarajan <br> Venue:&nbsp; U BLOCK - 212</div>
+              <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-6">
+                  <br>
+                 <br>
+                 <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                 <a class="RegText" href="#register" id= 'cul-reg-6'>Register</a></p>
+                  </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-7', 'cul-reg-7')">
+            
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/singing.png" alt="Singing">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#Singing">Singing</a> 
+                  <br>Name of the Event Coordinator:&nbsp;Mr Ch Phani Kumar <br> Venue:&nbsp; U BLOCK - 203</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-7">
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'cul-reg-7'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-8', 'cul-reg-8')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/smartalac.png" alt="Smart Alac">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#Smart-Alac">Smart Alac</a> <br>Name of the Event Coordinator:&nbsp;Mr Madhu Babu <br> Venue:&nbsp; R-BLOCK 201 </div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-8">
+                  
+                  
+
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                 <a class="RegText" href="#register" id= 'cul-reg-8'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-10', 'cul-reg-10')">
+              
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/painting.jpeg" alt="Break The Query">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#BreakTheQuery">Painting/Art</a> <br> Name of the Event Coordinator:&nbsp;Ms Bala Jyothi <br> Venue:&nbsp; Drawing Room U412</div>
+                  <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-10">
+                  <br>
+                        
+                 
+                  <br><br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                  <br><a class="RegText" href="#register" id= 'cul-reg-10'>Register</a></p>
+            </div>
+            </div>
+
+            <div class="row schedule-item" onclick="expand('cul-11', 'cul-reg-11')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/maze.jpeg" alt="Line Up">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#lineup">Literary Maze</a> <br> Venue:&nbsp; Near W - BLOCK</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-11">
+                  <br>
+                 
+              
+                 
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'cul-reg-11'>Register</a></p>
+            </div>
+            </div>    
+            
+            <div class="row schedule-item" onclick="expand('cul-12', 'cul-reg-12')">
+              <div class="col-md-4" >
+                <div class="speaker">
+                  <img src="Banners/perfect.jpeg" alt="Line Up">
+                </div>
+                </div>
+                <div class="col-md-8"><a href="#lineup">Mr.Perfect</a> <br> Venue:&nbsp; R - BLOCK Seminar Hall</div>
+                <div class="col-md-12">
+                <p style="height:2vw; overflow:hidden;" id="cul-12">
+                  <br>
+                 
+              
+                 
+                  <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>
+                <a class="RegText" href="#register" id= 'cul-reg-12'>Register</a></p>
+            </div>
+            </div> 
+
+          </div>
+                
+                      <!-- Schdule dep 9 -->
+                      <div role="tabpanel" class="col-lg-9 tab-pane fade" id="dep-9">
+
+                        <!-- <div class="row schedule-item">
+                          <div class="col-md-2"><time>09:30 AM</time></div>
+                          <div class="col-md-10">
+                            <h4>Registration</h4>
+                            <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+                          </div>
+                        </div> -->
+                        
+                        <div class="row schedule-item" onclick="expand('club-1', 'club-reg-1')">
+                          <div class="col-md-4 " >
+                            <div class="speaker">
+                              <img src="Banners/MadAdds.jpeg" alt="Paper Presentation" title="Click for Details">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <a href="#Paper Presentation" title="Click for Details">Mad Adds - T&P</a>
+                          <br> Name of the Event Coordinator:&nbsp;Mr T Sashegiri Rao <br>Venue:&nbsp; U212
+                          </div>
+                          <div class="col-md-12">
+                            
+                            <p style="height:2.5vw; overflow:hidden;" id="club-1" ><br>      
+                              <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                      
+                              <a class="RegText" href="#register" id="club-reg-1">Register</a>
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="row schedule-item" onclick="expand('club-2', 'club-reg-2')">
+                          <div class="col-md-4 " >
+                            <div class="speaker">
+                              <img src="Banners/BBI.jpeg" alt="Paper Presentation" title="Click for Details">
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <a href="#Paper Presentation" title="Click for Details">Best Business Idea - T&P</a>
+                          <br> Name of the Event Coordinator:&nbsp;Dr P Dharmarajan <br>Venue:&nbsp; U213
+                          </div>
+                          <div class="col-md-12">
+                            
+                            <p style="height:2.5vw; overflow:hidden;" id="club-2" ><br>      
+                              <br><a href="#banner" onclick="banner('Banners/Technothon.png')">Show Banner</a>                      
+                              <a class="RegText" href="#register" id="club-reg-2">Register</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Schdule dep 9 -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+
+
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+    <div class="section-header">
+      <h2>FEST ORGANIZERS</h2>
+    </div>
+
+    <div class="row contact-info">
+
+      <div class="col-md-1"></div>
+      <div class="col-md-3">
+        <div class="contact-phone">
+          <i class="ion-ios-telephone-outline"></i>
+          <h3>CONVERNOR</h3>
+          <p>DR S M ROY CHOUDRI<br>HOD CSE, URCE<br>CELL : 98496 45441</p>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+        <div class="col-md-3">
+        <div class="contact-phone">
+          <i class="ion-ios-telephone-outline"></i>
+          <h3>CO-CONVERNOR</h3>
+          <p>SRI KELOTHU NARESH<br> HOD EEE,URCET<br>CELL : 99492 57091<p>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      </div>
+</div>
+</section>
+
+    
+
+
+
+
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Management & Executives</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-xs-6" >
+            <div class="speaker sir">
+              <img src="coords/chairmansir.jpeg" alt="1" class="img-fluid">
+              <div class="details">
+                <h3><a href="#Chairmansir">Sri Sunkara Ramabrahmam</a></h3>
+                <p><i>Chairman</i></p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-3 col-xs-6">
+            <div class="speaker sir" >
+              <img src="coords/Anil_Sunkara_sir.jpg" alt="2" class="img-fluid">
+              <div class="details">
+                <h3><a href="#Correspondent">Sri Anil Sunkara</a></h3>
+                <p><i>Secretary & Correspondent</i></p>
+                
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-3 col-xs-6">
+            <div class="speaker sir" >
+              <img src="coords/Directorsir.jpeg" alt="3" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speaker-details">Dr Kurra Rajasekhara Rao</a></h3>
+                <p> <i> Director - URCET </i></p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-3 col-xs-6">
+            <div class="speaker sir" >
+              <img src="coords/principalsir.jpeg" alt="4" class="img-fluid">
+              <div class="details">
+                <h3><a href="#speaker-details">Dr G V K S V Prasad</a></h3>
+                <p><i>Principal - URCET</i></p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Alejandrin Littel</a></h3>
+                <p>Qui molestiae natus</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Willow Trantow</a></h3>
+                <p>Non autem dicta</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Event Venue</h2>
+          <p>Event venue location info and gallery</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 venue-map">
+            <iframe src="https://maps.google.com/maps?q=usha%20rama&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>Usha Rama, Telaprolu</h3>
+                <p>Usha Rama College of Engineering and Technology, established by Usha Rama Educational Academy, with the aim of inculcating quality education to students and produce young technocrats having good knowledge. The college is approved by AICTE and affiliated to JNTU-Kakinada. It is sponsored by Chicago based Multi Million Dollar Advansoft group ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="marquee">
+        <div class="marquee-content"> 
+          <div class="marquee-item">
+            <img src="img/scroll1.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll2.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll3.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll4.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll5.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll6.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll7.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll8.jpg" alt="">
+          </div>
+          <div class="marquee-item">
+            <img src="img/scroll4.jpg" alt="">
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="marquee-item">
+            <img src="img/scroll1.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll2.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll3.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll4.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll5.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll6.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll7.jpg" alt="">
+          </div>
+          
+          <div class="marquee-item">
+            <img src="img/scroll8.jpg" alt="">
+          </div>
+          <div class="marquee-item">
+            <img src="img/scroll5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the recent events</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll1.jpg" alt=""></a>
+        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll2.jpg" alt=""></a>
+        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll3.jpg" alt=""></a>
+        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll4.jpg" alt=""></a>
+        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll5.jpg" alt=""></a>
+        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll6.jpg" alt=""></a>
+        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll7.jpg" alt=""></a>
+        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/scroll8.jpg" alt=""></a>
+      </div>
+
+    </section>
+
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="supporters" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <br>
+          <div class="col-md-4"></div>
+          <div class="col-lg-3 col-md-4 col-xs-6"  >
+            <div class="supporter-logo" style="background-color: #f6f7fd; border: none !important">
+              <img src="img/supporters/5.png" class="img-fluid" alt="" style="height:240px; overflow:hidden; background-color:#f6f7fd; margin-left: 6vw;">
+            </div>
+          </div>
+          
+          <!-- <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="img/supporters/8.png" class="img-fluid" alt="">
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--=========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <ul id="faq-list">
+
+                <li>
+                  <a data-toggle="collapse" class="collapsed" href="#faq1">What is a yoUR Fest?<i class="fa fa-minus-circle"></i></a>
+                  <div id="faq1" class="collapse" data-parent="#faq-list">
+                    <p>
+                      A yoUR Fest is an event organized by a college or university to celebrate student achievements and provide a platform for cultural, artistic, and intellectual expression.                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq2" class="collapsed">How can I participate in a yoUR Fest?  <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq2" class="collapse" data-parent="#faq-list">
+                    <p>You can easily select the branch and select the event you want to participant then fill the google form, you can pay the registration fee on the fest dep at tthe college!</p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq3" class="collapsed">Is there a dress code for a yoUR Fest? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq3" class="collapse" data-parent="#faq-list">
+                    <p> There is no specific Dress code for the yoUR fest 2023
+                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq4" class="collapsed">Are yoUR Fests only for students? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq4" class="collapse" data-parent="#faq-list">
+                    <p>yoUR Fest are only for the students, and the participants of the other college students are also allowed</p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq5" class="collapsed">How much do tickets for a yoUR Fest typically cost? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq5" class="collapse" data-parent="#faq-list">
+                    <p>
+                      The cost of tickets for a yoUR Fest will depend on the specific fest and the activities being offered. Check with the organizers or consult the fest website for more information.                    </p>
+                  </div>
+                </li>
+      
+                <li>
+                  <a data-toggle="collapse" href="#faq6" class="collapsed">What kinds of activities are typically offered at a yoUR Fest? <i class="fa fa-minus-circle"></i></a>
+                  <div id="faq6" class="collapse" data-parent="#faq-list">
+                    <p>
+                      College fests may offer a variety of activities such as concerts, workshops, competitions, and exhibitions.
+
+                    </p>
+                    <li>
+                    <a data-toggle="collapse" href="#faq7" class="collapsed">Is it necessary for students to carry their ID cards?<i class="fa fa-minus-circle"></i></a>
+                  <div id="faq7" class="collapse" data-parent="#faq-list">
+                    <p>Yes, it is necessary for students to carry their ID cards.
+                    </p>
+                  </div>
+                </li>
+      
+              </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>DEPARTMENT COORDINATORS</h2>
+          <p>Please don't hesitate to contact, if you have any queries</p>
+        </div>
+
+        <div class="row contact-info">
+
+
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>CIVIL</h3>
+              <p>Mr K Ashok<br>Department Coordinator<br>CELL : 81433 64658</p>
+            </div>
+          </div>
+            <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>COMPUTER SCIENCE ENGINEERING</h3>
+              <p>Mr B V Praveen Kumar<br> Department Coordinator<br>CELL : 91103 62756</p>
+            </div>
+          </div>
+            <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Electronics and Communication Engineering</h3>
+              <p>Mr M Koteswara Kishore<br> Department Coordinator <br>CELL : 95819 97755</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Electrical and Electronics Engineering</h3>
+              <p>Mr A Balaji<br>Department Coordinator<br>CELL : 94920 80980</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Mechanical</h3>
+              <p>Mr N Siva Krishna<br>Department Coordinator <br>CELL : 90147 59974</p>
+                <!-- <br>CELL : 99492 57091 -->
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>INFORMATION TECHNOLOGY</h3>
+              <p>Mr B Trivikrama Rao<br>Department Coordinator<br>CELL : 97034 18339</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>English</h3>
+              <p>Mr R Simhachalam<br>Department Coordinator <br>CELL : 94920 23446</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Diploma</h3>
+              <p>Mr T Srinivasa Rao<br>Department Coordinator<br>CELL : 94907 03377</p>
+            </div>
+          </div>
+          
+          
+          
+
+        </div>
+
+      </div>
+
+<br> <br> <br>
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>STUDENT COORDINATORS</h2>
+          <p>Please don't hesitate to contact, if you have any queries</p>
+        </div>
+
+        <div class="row contact-info">
+
+
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>CIVIL</h3>
+              <p>Mr Sriram Kalyan<br>Student Coordinator<br>CELL : 70939 47979</p>
+            </div>
+          </div>
+            <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>COMPUTER SCIENCE ENGINEERING</h3>
+              <p>Mr D Bharath Kumar<br> Student Coordinator<br>CELL : 63032 85652</p>
+            </div>
+          </div>
+            <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Electronics and Communication Engineering</h3>
+              <p>Mr K Rajesh<br> Student Coordinator <br>CELL : 62816 26450</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Electrical and Electronics Engineering</h3>
+              <p>Mr G Chandraasekhar<br>Student Coordinator<br>CELL : 99891 17376</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Mechanical</h3>
+              <p>Mr T Ratnakar<br>Student Coordinator <br>CELL : 94924 13539</p>
+                <!-- <br>CELL : 99492 57091 -->
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>INFORMATION TECHNOLOGY </h3>
+              <p>Mr Ch Ayyappa<br>Student Coordinator<br>CELL : 82470 07992</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>First Year</h3>
+              <p>Mr Y. Nanchariah<br>Student Coordinator <br>CELL : 70326 30634</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Diploma</h3>
+              <p>Mr G Prem Sagar<br>Student Coordinator<br>CELL : 77804 59889</p>
+            </div>
+          </div>
+          
+          
+          
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <img src="img/yoUR.png" alt="TheEvenet">
+            <p>Usha Rama College of Engineering and Technology, established by Usha Rama Educational Academy, with the aim of inculcating quality education to students and produce young technocrats having good knowledge. The college is approved by AICTE and affiliated to JNTU-Kakinada. It is sponsored by Chicago based Multi Million Dollar Advansoft group ...</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#intro">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#about">About us</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#speakers">Management</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#schedule">Events</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Address</h4>
+            <p>
+              NH-14 TELAPROLU NEAR GANNAVARAM, 521109 
+            </p>
+
+
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>VISITOR COUNT</h4>
+            <p>
+            <img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=bp6xkktw6e4xwmm9lltzyz85jlmgsp7t" 
+            border="0" title="web page counter" alt="web page counter"></a>
+          </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>UshaRama</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       <p > Designed and developed by Mr M Venakata Yaswanth, Mr B Vinay Gandhi </p>
+      </div>
+    </div>
+  </footer>
+  <!--end #footer -->
+
+  <a href="#" class="back-to-top">^</a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="script2.js"></script>
+
+</body>
+
+</html>
